@@ -1,0 +1,12 @@
+Run python script for homework 1 problem 4
+
+install python3
+install pip3
+
+use pip3 to install scipy, matplotlib, numpy
+
+$ pip3 install scipy matplotlib numpy
+
+run script
+
+$ python3 image.py
