@@ -1,19 +1,22 @@
-function pX = problem4p1a_joint(x)
+function pX = assignments_to_pX(asgn)
 
-run('problem4p1a');
+run('random_pX');
 
-idx0 = [1, x(1) + 1];
-idx1_0 = [x(1) + 1, x(2) + 1];
-idx2 = [1, x(3) + 1];
-idx3_0 = [x(1) + 1, x(4) + 1];
-idx4_0 = [x(1) + 1, x(5) + 1];
-idx5_134 = [x(2) + 2*x(4) + 4*x(5) + 1, x(6) + 1];
-idx6_24 = [x(3) + 2*x(5) + 1, x(7) + 1];
-idx7_13 = [x(2) + 2*x(4) + 1, x(8) + 1];
-idx8_134 = [x(2) + 2*x(4) + 4*x(5) + 1, x(9) + 1];
-idx9_134 = [x(2) + 2*x(4) + 4*x(5) + 1, x(10) + 1];
-idx10_2 = [x(3) + 1, x(11) + 1];
-idx11_124 = [x(2) + 2*x(3) + 4*x(5) + 1, x(12) + 1];
+asgnCell = num2cell(asgn);
+[x11, x10, x9, x8, x7, x6, x5, x4, x3, x2, x1, x0] = asgnCell{:};
+
+idx0 = [1, x0 + 1];
+idx1_0 = [x0 + 1, x1 + 1];
+idx2 = [1, x2 + 1];
+idx3_0 = [x0 + 1, x3 + 1];
+idx4_0 = [x0 + 1, x4 + 1];
+idx5_134 = [x1 + 2*x3 + 4*x4 + 1, x5 + 1];
+idx6_24 = [x2 + 2*x4 + 1, x6 + 1];
+idx7_13 = [x1 + 2*x3 + 1, x7 + 1];
+idx8_134 = [x1 + 2*x3 + 4*x4 + 1, x8 + 1];
+idx9_134 = [x1 + 2*x3 + 4*x4 + 1, x9 + 1];
+idx10_2 = [x2 + 1, x10 + 1];
+idx11_124 = [x1 + 2*x2 + 4*x4 + 1, x11 + 1];
 
 p0 = p0_params(idx0(1), idx0(2));
 p1_0 = p1_0_params(idx1_0(1), idx1_0(2));

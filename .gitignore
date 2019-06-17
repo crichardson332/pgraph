@@ -1,3 +1,6 @@
 *build
 *tags
 *.pyc
+.DS_Store
+*.swp
+*.m~
